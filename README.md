@@ -1,0 +1,1 @@
+YLDB is a lightweight Node.js module to help you store data in JSON files easily. It's not very well-made. But you can improve it by creating an issue on GitHub, or fork it if you want because it's licensed under GNU GPL v3.
