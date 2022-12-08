@@ -1,0 +1,19 @@
+{
+  "name": "yldb",
+  "version": "1.0.0-beta",
+  "description": "YLDB is a lightweight Node.js module to help you store data in JSON files easily. It's not very well-made. But you can improve it by creating an issue on GitHub, or fork it if you want because it's licensed under GNU GPL v3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localteamate/yldb.git"
+  },
+  "author": "localteamate",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/localteamate/yldb/issues"
+  },
+  "homepage": "https://github.com/localteamate/yldb#readme"
+}
