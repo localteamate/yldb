@@ -14,8 +14,8 @@ class Database {
 	#dirname;
 
 	/**
-	 * @param {dirname} string
-	 * @param {name} string
+	 * @param {string} location
+	 * @param {string} name
 	 */
 	constructor(location, name) {
 		if (!location || !name)
@@ -32,8 +32,8 @@ class Database {
 	 */
 
 	/**
-	 * @param {key} string
-	 * @param {value} any
+	 * @param {string} key
+	 * @param {any} value
 	 */
 	set(key, value) {
 		if (!key || !this.#dirname || !this.#name) return this;
@@ -77,7 +77,7 @@ class Database {
 	 */
 
 	/**
-	 * @param {key} string
+	 * @param {string} key
 	 */
 	get(key) {
 		if (!key || !this.#dirname || !this.#name) return this;
@@ -107,7 +107,7 @@ class Database {
 	 */
 
 	/**
-	 * @param {key} string
+	 * @param {string} key
 	 */
 	remove(key) {
 		if (!key || !this.#dirname || !this.#name) return this;
@@ -130,6 +130,9 @@ class Database {
 
 		writeFileSync(dbPath, JSON.stringify(data));
 	}
+	/**
+	 * @return {any}
+	 */
 }
 
 module.exports = Database;
