@@ -110,7 +110,7 @@ class Database {
 	 * @param {key} string
 	 */
 	remove(key) {
-		if (!key || !this.#dirname || this.#name) return this;
+		if (!key || !this.#dirname || !this.#name) return this;
 
 		const localdir = readdirSync(process.cwd());
 
